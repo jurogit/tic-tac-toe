@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FCC Tic Tac Toe</title>
+		<meta name="description" content="Free Code Camp Project - Tic Tac Toe">
+		<meta name="author" content="Robert Juhasz">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		
+		<!-- favicon -->
+    <!-- <link rel="icon" href=".png"> -->
+		
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+    
+    <section id="main" class="main">
+      <div id="app" class="app">
+        <div id="app-box" class="app-box">
+          <h1 id="title" class="title">Tic Tac Toe</h1>
+          <div id="game" class="game wrapper">
+            <div id="intro" class="intro centered overlay">
+              <div class="i-sign centered">
+                <canvas id="xSign" width="80" height="80"></canvas>
+              </div>
+              <div class="i-sign centered">
+                <canvas id="oSign" width="80" height="80"></canvas>
+              </div>
+            </div>
+            <div id="board" class="board centered overlay">
+              <div class="fields wrapper">
+                <canvas id="0" width="80" height="80"></canvas>
+                <canvas id="1" width="80" height="80"></canvas>
+                <canvas id="2" width="80" height="80"></canvas><br>
+                <canvas id="3" width="80" height="80"></canvas>
+                <canvas id="4" width="80" height="80"></canvas>
+                <canvas id="5" width="80" height="80"></canvas><br>
+                <canvas id="6" width="80" height="80"></canvas>
+                <canvas id="7" width="80" height="80"></canvas>
+                <canvas id="8" width="80" height="80"></canvas>
+              </div>
+            </div>
+          </div>
+          <div id="status" class="status">
+            <div class="back-btn-wrap">
+              <button id="back" class="back-btn centered" type="button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            </div>
+
+            <div class="message-wrap centered">
+              <p id="message" class="centered">Select Players</p>
+            </div>
+
+            <div class="reset-btn-wrap">
+              <button id="reset" class="reset-btn centered" type="button"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <div id="dashboard" class="dashboard">
+            <div id="select" class="select">
+              <div id="p1" class="choice">
+                <button id="p1-human" class="button stretch" type="button"><i class="fa fa-2x fa-user" aria-hidden="true"></i></button>
+                <button id="p1-computer" class="button stretch" type="button"><i class="fa fa-2x fa-laptop" aria-hidden="true"></i></button>
+              </div>
+              <div class="go-btn-wrap">
+                <button id="go" class="stretch" type="button">Play</button>
+              </div>
+              <div id="p2" class="choice">
+                <button id="p2-human" class="button stretch" type="button"><i class="fa fa-2x fa-user" aria-hidden="true"></i></button>
+                <button id="p2-computer" class="button stretch" type="button"><i class="fa fa-2x fa-laptop" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div id="score" class="score">
+              <div id="p1-score" class="player stretch">
+                <p class="p-name">Player 1</p>
+                <div class="p-score">00</div>
+              </div>
+              <p class="centered stretch">vs</p>
+              <div id="p2-score" class="player stretch">
+                <p class="p-name">Player 2</p>
+                <div class="p-score">00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+	</body>
+</html>
